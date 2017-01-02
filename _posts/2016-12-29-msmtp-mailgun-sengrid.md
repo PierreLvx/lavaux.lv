@@ -7,7 +7,13 @@ I had a few VMs configured with [ssmtp](https://github.com/badoo/ssmtp/commits/m
 
 I came across [msmtp](http://msmtp.sourceforge.net/), which fit the bill perfectly and is trivial to set up.
 
-Install msmtp with your package manager, and create `/etc/msmtprc` to configure it globally on your host. You'll need to edit the values in caps with [your SMTP credentials](https://help.mailgun.com/hc/en-us/articles/203409084-How-do-I-create-additional-SMTP-credentials-) :
+On a Debian based distro :
+
+```shell
+apt install msmtp msmtp-mta
+```
+
+Then create `/etc/msmtprc` to configure it globally on your host. You'll need to edit the values in caps with [your SMTP credentials](https://help.mailgun.com/hc/en-us/articles/203409084-How-do-I-create-additional-SMTP-credentials-) :
 
 ```
 defaults
@@ -47,3 +53,11 @@ Note that `user` *should* be `apikey`.
 If you need specific user configurations, you can create `~/.msmtprc` files. To route emails to different recipients, you can [set up aliases](http://msmtp.sourceforge.net/doc/msmtp.html#Aliases-file).
 
 Also, you can [customize the timeout](http://msmtp.sourceforge.net/doc/msmtp.html#General-commands) per account using e.g. `timeout 60` to wait one minute.
+
+Finally, send a test email from the command line :
+
+```shell
+echo "Subject: Testing msmtp" | sendmail -v your@email.tld
+```
+
+If everything went well, you should see your test within a few seconds.
