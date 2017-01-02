@@ -14,7 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lavaux.lv" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
-name: 'Pierre Lavaux'
+author: 'Pierre Lavaux'
 bio: >
   Cloud Architect and Digital Entrepreneur
 author_image: "/assets/images/pierre.jpg"
@@ -36,3 +36,4 @@ autoprefixer:
 gems:
   - jekyll-paginate
   - jekyll-autoprefixer
+  - jekyll-feed
