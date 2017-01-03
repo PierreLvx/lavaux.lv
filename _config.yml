@@ -37,3 +37,4 @@ gems:
   - jekyll-paginate
   - jekyll-autoprefixer
   - jekyll-feed
+  - jekyll-sitemap
