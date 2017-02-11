@@ -314,7 +314,7 @@ body {
 			}
 		}
 		ul, ol {
-			padding: 0 0 30px;
+			padding: 0;
 			margin: 0;
 		}
 		li {
@@ -468,8 +468,8 @@ pre {
 pre.highlight {
 	border: none;
 	padding: 32px;
-	margin-left: -26px;
-	margin-right: -26px;
+	margin-left: -16px;
+	margin-right: -16px;
 	border-radius: 0;
 	line-height: 1.35;
 }
