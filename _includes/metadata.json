@@ -16,5 +16,21 @@
       "width": "80",
       "height": "80"
     }
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ site.author_image | prepend: site.baseurl | prepend: site.url }}",
+      "width": "80",
+      "height": "80"
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ site.author_image | prepend: site.baseurl | prepend: site.url }}",
+    "width": "80",
+    "height": "80"
   }
 }
