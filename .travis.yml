@@ -1,0 +1,7 @@
+sudo: false
+language: ruby
+branches:
+  only:
+    - master
+script:
+  - "bundle exec jekyll build"
