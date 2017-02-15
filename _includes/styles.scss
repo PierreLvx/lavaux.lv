@@ -4,6 +4,7 @@
 $grey-color:            #828282;
 $grey-color-lighter:    rgba(221, 221, 221, .7);
 $grey-color-medium:     #b3b3b1;
+$black:                 #333;
 
 .icon {
     > svg {
@@ -51,7 +52,7 @@ body {
     font-family: $font-sans;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: $black;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -127,16 +128,8 @@ body {
             color: #666665;
         }
         .post-meta {
-            font-size: 14px;
             color: $grey-color-medium;
             line-height: 30px;
-            a {
-                color: $grey-color-medium;
-                text-decoration: none;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
         }
     }
 }
@@ -395,7 +388,7 @@ body {
                 font-size: 14px;
                 line-height: 2;
                 a {
-                    color: #333;
+                    color: $grey-color-medium;
                     &:hover {
                         text-decoration: underline;
                     }
@@ -416,7 +409,7 @@ body {
     padding: 20px 0 0;
     a {
         text-decoration: none;
-        color: #bbb;
+        color: $grey-color-medium;
         padding-left: 12px;
         float: right;
         .hidden {
@@ -435,6 +428,7 @@ code {
     border-radius: 3px;
     background: #faf9f9;
     font-feature-settings: initial;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace
 }
 
 code {
@@ -477,7 +471,7 @@ pre.highlight {
 
 a.logo {
     text-decoration: none;
-    color: #333332;
+    color: $black;
     transition: opacity 0.2s linear;
     &:hover {
         text-decoration: none;
@@ -486,5 +480,5 @@ a.logo {
 }
 
 span.published {
-    color: #bbb;
+    color: $grey-color-medium;
 }
