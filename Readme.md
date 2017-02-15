@@ -1,6 +1,8 @@
 Amplify for Jekyll
 ===
 
+[![Build Status](https://travis-ci.org/PierreLvx/lavaux.lv.svg?branch=master)](https://travis-ci.org/PierreLvx/lavaux.lv)
+
 This is my personal blog, based on [Amplify](https://github.com/ageitgey/amplify).
 
 Notable changes from the original theme include :
