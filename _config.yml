@@ -1,3 +1,4 @@
+---
 # Welcome to Amplified for Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -9,17 +10,17 @@
 title: Pierre Lavaux
 email: pierre@lavaux.lv
 description: >
-  Notes & Thoughts
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lavaux.lv" # the base hostname & protocol for your site
-paginate:	5 # The number of posts to show per page on your homepage
+  A collection of technical notes and thoughts.
+baseurl: ""  # the subpath of your site, e.g. /blog
+url: "https://lavaux.lv"  # the base hostname & protocol for your site
+paginate: 5  # The number of posts to show per page on your homepage
 
-author: 'Pierre Lavaux'
+author: "Pierre Lavaux"
 bio: >
   Cloud Architect and Digital Entrepreneur
 author_image: "/assets/images/pierre_lavaux.jpg"
 twitter_username: prlvx
-github_username:  PierreLvx
+github_username: PierreLvx
 
 fb_url: pierre.lvx
 
@@ -33,7 +34,7 @@ kramdown:
 
 autoprefixer:
   browsers:
-  - last 5 versions
+    - last 5 versions
 
 gems:
   - jekyll-paginate
