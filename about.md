@@ -6,9 +6,7 @@ permalink: /about/
 
 Hi, and thanks for stopping by.
 
-My name is Pierre, I'm a full stack developer with some technical leadership experience. I like building pragmatic engineering teams, efficient systems and elegant solutions.
-
-I've previously attented law school, because I was interested in intellectual property and software patents. Eventually, software itself turned out to be more thrilling. I am now helping startups grow with proper infrastructure, tooling and processes.
+My name is Pierre, I'm a full stack developer with some technical leadership experience. I like building pragmatic engineering teams, efficient systems and elegant solutions. I currently help startups grow with proper infrastructure, tooling and processes.
 
 I work out of Paris, France.
 
@@ -16,9 +14,12 @@ I work out of Paris, France.
 
 This site is a collection of notes and thoughts. I've been meaning to blog for a while, because I have greatly benefited from others sharing technical tips that have sharpened my skills, and pieces that have built up my critical thinking.
 
+I also share interesting links and quotes via [Pocket](https://getpocket.com/@lavaux "Pierre Lavaux on Pocket") and [Refind](https://refind.com/prlvx "Pierre Lavaux on Refind").
+
 #### Contact
 
-Ping me via [Twitter](https://twitter.com/prlvx). Stalk me on [LinkedIn](https://www.linkedin.com/in/pierrelavaux) or [GitHub](https://github.com/PierreLvx).
+Ping me via [Twitter](https://twitter.com/prlvx "Pierre Lavaux on Twitter"). Stalk me on [LinkedIn](https://www.linkedin.com/in/pierrelavaux "Pierre Lavaux on LinkedIn") or [GitHub](https://github.com/PierreLvx "Pierre Lavaux on GitHub").
 
-If you wish to email me, it's my first name at this domain.
+If you wish to email me, it's my first name at this domain. To contact me securely, you can get my PGP key from [Keybase](https://keybase.io/pierrelavaux/pgp_keys.asc).
 
+Found a mistake or a typo ? Do let me know, or [raise an issue](https://github.com/PierreLvx/lavaux.lv/issues). Thanks!
