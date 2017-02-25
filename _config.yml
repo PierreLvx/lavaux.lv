@@ -36,6 +36,9 @@ autoprefixer:
   browsers:
     - last 5 versions
 
+sass:
+  style: compressed
+
 gems:
   - jekyll-paginate
   - jekyll-autoprefixer
