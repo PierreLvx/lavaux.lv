@@ -3,7 +3,7 @@
 
 $grey-color:            #828282;
 $grey-color-lighter:    rgba(221, 221, 221, .7);
-$grey-color-medium:     #999;
+$grey-color-medium:     #888;
 $black:                 #333;
 
 .icon {
@@ -111,7 +111,7 @@ body {
                 transition: opacity 0.2s linear;
                 &:hover {
                     text-decoration: none;
-                    opacity: .85;
+                    opacity: .8;
                 }
             }
         }
@@ -136,12 +136,11 @@ body {
     border-top: 1px solid $grey-color-lighter;
     margin: 0;
     padding: 16px 0;
-    span {
-        color: $grey-color-medium;
-        font-size: $rs / 8 * 6;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
+    padding-bottom: 32px;
+    color: $grey-color-medium;
+    font-size: $rs / 8 * 6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .pagination {
@@ -164,7 +163,7 @@ body {
     font-size: $rs / 4 * 3;
     text-align: center;
     color: $grey-color-medium;
-    line-height: $rs * 1.1;
+    line-height: $rs * 1.5;
     a {
         color: #666;
         text-decoration: none;
@@ -332,9 +331,6 @@ body {
                 margin-right: 18px;
                 margin-bottom: 18px;
             }
-            .index-headline {
-                padding-bottom: 32px;
-            }
             a {
                 color: black;
                 text-decoration: none;
@@ -370,9 +366,6 @@ body {
                 width: 100%;
             }
 
-            .index-headline {
-                padding-bottom: 32px;
-            }
             .site-footer {
                 margin: 0;
                 padding: 0;
@@ -467,7 +460,7 @@ a.logo {
     transition: opacity 0.2s linear;
     &:hover {
         text-decoration: none;
-        opacity: .85;
+        opacity: .8;
     }
 }
 

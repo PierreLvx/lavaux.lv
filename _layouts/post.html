@@ -7,17 +7,17 @@ layout: default
     <section class="post-content">
       {{ content }}
     </section>
-    <footer class="post-footer">
+    <div class="post-footer">
       <section class="share">
         <span class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></span>
         <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter_username }}" target="_blank">
           Share on {% include icon-twitter.html %}
         </a>
       </section>
-    </footer>
+    </div>
     <div class="bottom-teaser cf">
       <div class="isLeft">
-        <h5 class="index-headline featured"><span>Written by</span></h5>
+        <h5 class="index-headline featured">Written by</h5>
         <section class="author">
           <div class="author-image"></div>
           <h4>{{ site.author }}</h4>
@@ -25,8 +25,8 @@ layout: default
         </section>
       </div>
       <div class="isRight">
-        <h5 class="index-headline featured"><span>Around the web</span></h5>
-        <footer class="site-footer">
+        <h5 class="index-headline featured">Around the web</h5>
+        <div class="site-footer">
           <span class="social-icon">
             {% if site.github_username %}
               {% include icon-github.html username=site.github_username %}
@@ -38,7 +38,7 @@ layout: default
             {% endif %}
           </span>
           <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe via RSS</a>
-        </footer>
+        </div>
       </div>
     </div>
   </article>
