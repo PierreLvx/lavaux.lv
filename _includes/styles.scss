@@ -96,10 +96,10 @@ body {
     }
 
     article {
-        padding: 32px 0;
+        padding: 32px 0 0 0;
         border-bottom: 1px solid $grey-color-lighter;
         &:last-child {
-            border-bottom: 0px;
+            border-bottom: 0;
         }
         .post-title {
             letter-spacing: -0.02em;
@@ -108,17 +108,17 @@ body {
             a {
                 text-decoration: none;
                 color: $black;
-                transition: opacity 0.2s linear;
+                transition: opacity .2s linear;
                 &:hover {
                     text-decoration: none;
-                    opacity: .8;
+                    opacity: .75;
                 }
             }
         }
         .post-excerpt {
-            letter-spacing: -0.02em;
+            letter-spacing: -.02em;
             font-size: 20px;
-            line-height: 1.59;
+            line-height: 1.6;
             color: #666;
         }
         .post-meta {
@@ -187,7 +187,7 @@ body {
     }
     .post-meta-text {
         color: $grey-color-medium;
-        letter-spacing: -0.02em;
+        letter-spacing: -.02em;
         font-weight: 400;
         font-style: normal;
         font-size: 14px;
@@ -209,7 +209,7 @@ body {
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: $font-sans;
-            letter-spacing: -0.02em;
+            letter-spacing: -.02em;
             font-style: normal;
             font-weight: 700;
             margin-bottom: 0;
@@ -315,7 +315,7 @@ body {
             margin-bottom: 12px;
             padding-top: 2px;
             font-size: 20px;
-            line-height: 1.59;
+            line-height: 1.6;
             letter-spacing: -.002em;
             hyphens: auto;
             font-feature-settings: 'liga', 'dlig';
@@ -328,7 +328,7 @@ body {
         }
     }
     .bottom-teaser {
-        padding: 50px 0 0 0;
+        padding: 50px 0;
         .isLeft {
             float: left;
             width: 47%;
@@ -418,9 +418,6 @@ body {
         color: $grey-color-medium;
         padding-left: 12px;
         float: right;
-        .hidden {
-            display: none;
-        }
         &:hover {
             color: $black;
         }
@@ -479,7 +476,7 @@ pre.highlight {
 a.logo {
     text-decoration: none;
     color: $black;
-    transition: opacity 0.2s linear;
+    transition: opacity .2s linear;
     &:hover {
         text-decoration: none;
         opacity: .8;
