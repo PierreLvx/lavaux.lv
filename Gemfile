@@ -6,3 +6,4 @@ gem 'jekyll-compose', group: [:jekyll_plugins]
 gem 'jekyll-autoprefixer'
 gem 'jekyll-feed'
 gem 'jekyll-sitemap'
+gem 'liquid-md5'

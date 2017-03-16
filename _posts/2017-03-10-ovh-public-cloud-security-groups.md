@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Beware of the default Security Group on OVH Public Cloud
+comments: true
 ---
 
 OVH has a public cloud offering, based on OpenStack, with an excellent price-performance ratio. With data centers in Europe and Canada, they are a great choice for standard compute, networking and storage needs. But there's a catch: **you absolutely must tighten security up**.

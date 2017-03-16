@@ -44,3 +44,4 @@ gems:
   - jekyll-autoprefixer
   - jekyll-feed
   - jekyll-sitemap
+  - liquid-md5

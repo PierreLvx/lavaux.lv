@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Linux Kernel Archives is shutting down FTP access, and so should you
+comments: true
 ---
 
 The Linux Kernel Archives [announced last week](https://kernel.org/shutting-down-ftp-services.html) that they were killing their FTP servers, a service "that has important protocol and security implications". If you're managing FTP servers, now is a good time to have a look at your setup too.
