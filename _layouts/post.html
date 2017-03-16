@@ -47,7 +47,7 @@ layout: default
         layout="responsive"
         sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
         resizable
-        src="https://disqus.lavaux.lv/#{{ page.url | md5 }}">
+        src="https://disqus.lavaux.lv/?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}#{{ page.url | md5 }}">
         <div overflow tabindex="0" role="button" aria-label="Disqus Comments">Disqus Comments</div>
       </amp-iframe>
     {% endif %}
