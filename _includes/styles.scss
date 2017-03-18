@@ -3,8 +3,8 @@
 
 $grey-color:            #828282;
 $grey-color-lighter:    rgba(221, 221, 221, .7);
-$grey-color-medium:     #888;
-$black:                 #3A4145;
+$grey-color-medium:     #656c7a;
+$black:                 #2a2e2e;
 
 .icon {
     > svg {
@@ -19,6 +19,10 @@ amp-img {
     background-color: grey;
 }
 
+amp-img[role=button] {
+    cursor: pointer;
+}
+
 .cf {
     @include clearfix;
 }
@@ -27,6 +31,9 @@ $rs: 16px;
 
 $font-serif: Charter, Georgia, Cambria, 'Times New Roman', Times, serif;
 $font-sans: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+$font-spacing: -.02em;
+$line-height: 1.6;
 
 @mixin respond-to($breakpoint) {
     @media only screen and (max-width: $breakpoint + px) {
@@ -71,7 +78,7 @@ body {
         top: 10px;
         right: $rs;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 32px;
 
         a {
             text-decoration: none;
@@ -95,6 +102,10 @@ body {
         padding: 0 $rs * 1;
     }
 
+    .article-item {
+        margin-bottom: 32px;
+    }
+
     article {
         padding: 32px 0 0 0;
         border-bottom: 1px solid $grey-color-lighter;
@@ -102,7 +113,7 @@ body {
             border-bottom: 0;
         }
         .post-title {
-            letter-spacing: -0.02em;
+            letter-spacing: $font-spacing;
             font-size: 36px;
             margin: 0;
             a {
@@ -116,14 +127,14 @@ body {
             }
         }
         .post-excerpt {
-            letter-spacing: -.02em;
+            letter-spacing: $font-spacing;
             font-size: 20px;
-            line-height: 1.6;
+            line-height: $line-height;
             color: #666;
         }
         .post-meta {
             color: $grey-color-medium;
-            line-height: 30px;
+            line-height: 32px;
         }
     }
 }
@@ -187,7 +198,7 @@ body {
     }
     .post-meta-text {
         color: $grey-color-medium;
-        letter-spacing: -.02em;
+        letter-spacing: $font-spacing;
         font-weight: 400;
         font-style: normal;
         font-size: 14px;
@@ -209,7 +220,7 @@ body {
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: $font-sans;
-            letter-spacing: -.02em;
+            letter-spacing: $font-spacing;
             font-style: normal;
             font-weight: 700;
             margin-bottom: 0;
@@ -234,9 +245,9 @@ body {
         }
         p {
             font-size: 20px;
-            line-height: 1.6;
+            line-height: $line-height;
             letter-spacing: -.002em;
-            margin-top: 30px;
+            margin-top: 32px;
             hyphens: auto;
             font-feature-settings: 'liga', 'dlig';
         }
@@ -251,6 +262,17 @@ body {
                 transition: border-color .2s ease, color .2s ease;
             }
         }
+        .footnotes::before {
+            display: block;
+            height: 3px;
+            background: $grey-color-lighter;
+            width: 12.5%;
+            content: '';
+            margin-bottom: 32px;
+        }
+        .footnotes {
+            margin-top: 32px;
+        }
         .footnote {
             margin-left: 2px;
             text-decoration: none;
@@ -263,11 +285,11 @@ body {
         }
         amp-img,
         amp-youtube {
-            margin-top: 30px;
+            margin-top: 32px;
         }
         figure {
             margin: 0;
-            padding: 0 0 30px;
+            padding: 0 0 32px;
         }
         figcaption {
             font-weight: 400;
@@ -284,12 +306,12 @@ body {
             padding: 0;
             display: block;
             width: 15%;
-            margin: 30px auto;
+            margin: 32px auto;
             border: 0px solid #ddd;
             border-top: 1px solid #ddd;
         }
         blockquote {
-            margin: 0 0 30px;
+            margin: 0 0 32px;
             margin-left: -26px;
             border-left: 3px solid #57ad68;
             padding-left: 20px;
@@ -311,16 +333,15 @@ body {
         }
         li {
             padding: 0;
-            margin-left: 30px;
-            margin-bottom: 12px;
-            padding-top: 2px;
+            margin-left: 32px;
             font-size: 20px;
-            line-height: 1.6;
+            line-height: $line-height;
             letter-spacing: -.002em;
             hyphens: auto;
             font-feature-settings: 'liga', 'dlig';
             p {
-                padding: 0 0 golden-ratio(1rem, 1);
+                padding: 0;
+                margin: 20px 0;
             }
         }
         ol li {
@@ -431,7 +452,7 @@ code {
     border-radius: 3px;
     background: #faf9f9;
     font-feature-settings: initial;
-    font-family: "Input Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-weight: 400;
 }
 
