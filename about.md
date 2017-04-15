@@ -23,3 +23,5 @@ Ping me via [Twitter](https://twitter.com/prlvx "Pierre Lavaux on Twitter"). Sta
 If you wish to email me, it's my first name at this domain. To contact me securely, you can get my PGP key from [Keybase](https://keybase.io/pierrelavaux/pgp_keys.asc).
 
 Found a mistake or a typo ? Do let me know, or [raise an issue](https://github.com/PierreLvx/lavaux.lv/issues). Thanks!
+
+This site is built with [Jekyll](http://jekyllrb.com) + [Amplify](https://github.com/PierreLvx/lavaux.lv).
