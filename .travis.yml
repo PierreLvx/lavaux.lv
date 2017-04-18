@@ -1,9 +1,17 @@
 sudo: false
+
 language: ruby
+
 rvm:
   - 2.2
+
 branches:
   only:
     - master
+
+before_script:
+  - "gem install mdl"
+  - "mdl _posts/ *.md --style .mdl.rb"
+
 script:
   - "bundle exec jekyll build"

@@ -12,7 +12,7 @@ Eventually I got tired of those New Relic alerts. A quick glance at `htop` showe
 
 However, when I launched the test I ran into the following error :
 
-```
+```text
 Are you authorized to profile this page?
 Probe not found, invalid signature (HTTP 200).
 ```
@@ -21,7 +21,7 @@ I double checked the configuration, and nothing was amiss. The [documentation](h
 
 **In your virtual host location block, simply check for Blackfire's header.** Assuming you already have `$no_cache` set up :
 
-```
+```nginx
 fastcgi_cache_bypass	$no_cache $http_x_blackfire_query;
 fastcgi_no_cache	$no_cache $http_x_blackfire_query;
 ```

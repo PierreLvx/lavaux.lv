@@ -14,7 +14,7 @@ If that's the first time you are setting up NGINX caching, you'll need to create
 
 Then, in your new vhost file, outside of the server block, declare a new zone :
 
-```
+```nginx
 proxy_cache_path /var/cache/nginx/yourcache levels=1:2 keys_zone=yourcache:4m inactive=12h;
 ```
 
@@ -24,7 +24,7 @@ Unless you expect to cache a very large number of static files, [you can keep a 
 
 Now, the meat and potatoes :
 
-```
+```nginx
 location / {
 	# The zone
 	proxy_cache yourcache;

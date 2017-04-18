@@ -12,7 +12,7 @@ These studies disregard basic statistical analysis principles and come up with *
 
 Take the [following equation](https://www.adback.co/revenue-loss-adblock-websites-ranking#methodology) for yearly losses per site:
 
-```
+```text
 (blocked elements) x $0.42 CPM x (country blocking rate) x (page views) x 12
 ```
 
@@ -20,7 +20,7 @@ The result depends on **too many assumptions**.
 
 **Blocked elements**: Unless you have crawled a [statistically significant sample](https://en.wikipedia.org/wiki/Sample_size_determination) of pages per site to get a _significant_ average of ad slots, per device categories (desktop, tablet, mobile), this number is worthless. Not to mention that ad slots hold very different values, especially display VS video.
 
-> For a skewed data distribution, median is a better measure of center. For any reasonably symmetric distribution with no outliers, mean is a better measure of center. - [Introductory Statistics](https://introductorystats.wordpress.com/2011/09/04/when-bill-gates-walks-into-a-bar/)[^1] 
+> For a skewed data distribution, median is a better measure of center. For any reasonably symmetric distribution with no outliers, mean is a better measure of center. - [Introductory Statistics](https://introductorystats.wordpress.com/2011/09/04/when-bill-gates-walks-into-a-bar/)[^1]
 
 **Average CPM:** CPMs depend on a ton of factors (industry, ad format, ad placement, time of the year, etc.) and most importantly, a simple multiplication doesn't account for [diminishing returns](https://en.wikipedia.org/wiki/Advertising_adstock#Advertising_saturation:_diminishing_returns_effect
 ): increasing the number of ads on a page doesn't increase your revenue opportunity linearly and, conversely, your losses due to adblock. Using a single rounded global CPM from 2015[^2] is lazy. Would you think for instance that IMDB, the #1 movie site, is selling [custom advertising campaigns](http://www.imdb.com/advertising/) for the average market CPM?

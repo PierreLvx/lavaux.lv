@@ -16,7 +16,7 @@ apt install msmtp msmtp-mta
 
 Then create `/etc/msmtprc` to configure it globally on your host. You'll need to edit the values in caps with [your SMTP credentials](https://help.mailgun.com/hc/en-us/articles/203409084-How-do-I-create-additional-SMTP-credentials-) :
 
-```
+```text
 defaults
 tls on
 tls_trust_file /etc/ssl/certs/ca-certificates.crt
@@ -39,7 +39,7 @@ Using a service like Mailgun, rather than your own SMTP server, ensures better d
 
 Simply create another `account` section. Instead of SMTP credentials, you'll have to [create an API key](https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/api_keys.html) with sending permissions. Again, edit accordingly :
 
-```
+```text
 account sendgrid
 host smtp.sendgrid.net
 port 587
