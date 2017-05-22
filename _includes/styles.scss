@@ -108,7 +108,6 @@ body {
 
     article {
         padding: 32px 0 0 0;
-        border-bottom: 1px solid $grey-color-lighter;
         &:last-child {
             border-bottom: 0;
         }
@@ -188,13 +187,6 @@ body {
     .post-title {
         font-weight: 600;
         line-height: 1.15;
-    }
-    .author-image {
-        background-image: url({{ site.baseurl }}{{site.author_image}});
-        display: inline-block;
-        float: left;
-        background-size: cover;
-        border-radius: 100%;
     }
     .post-meta-text {
         color: $grey-color-medium;
@@ -347,6 +339,16 @@ body {
         ol li {
             list-style-type: decimal;
         }
+    }
+}
+
+.content {
+    .author-image {
+        background-image: url({{ site.baseurl }}{{site.author_image}});
+        display: inline-block;
+        float: left;
+        background-size: cover;
+        border-radius: 100%;
     }
     .bottom-teaser {
         padding: 50px 0;

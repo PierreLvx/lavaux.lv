@@ -7,52 +7,50 @@ layout: default
     <section class="post-content">
       {{ content }}
     </section>
-    <div class="post-footer">
-      <section class="share">
-        <span class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></span>
-        <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter_username }}" target="_blank">
-          Share on {% include icon-twitter.html %}
-        </a>
+  </article>
+  <div class="post-footer">
+    <section class="share">
+      <span class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></span>
+      <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter_username }}" target="_blank">
+        Share on {% include icon-twitter.html %}
+      </a>
+    </section>
+  </div>
+  <div class="bottom-teaser cf">
+    <div class="isLeft">
+      <h5 class="index-headline featured">Written by</h5>
+      <section class="author">
+        <div class="author-image"></div>
+        <h4>{{ site.author }}</h4>
+        <p class="bio">{{site.bio}}</p>
       </section>
     </div>
-    <div class="bottom-teaser cf">
-      <div class="isLeft">
-        <h5 class="index-headline featured">Written by</h5>
-        <section class="author">
-          <div class="author-image"></div>
-          <h4>{{ site.author }}</h4>
-          <p class="bio">{{site.bio}}</p>
-        </section>
-      </div>
-      <div class="isRight">
-        <h5 class="index-headline featured">Around the web</h5>
-        <div class="site-footer">
-          <span class="social-icon">
-            {% if site.github_username %}
-              {% include icon-github.html username=site.github_username %}
-            {% endif %}
-          </span>
-          <span class="social-icon">
-            {% if site.twitter_username %}
-              {% include icon-twitter.html username=site.twitter_username %}
-            {% endif %}
-          </span>
-          <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe via RSS</a>
-        </div>
+    <div class="isRight">
+      <h5 class="index-headline featured">Around the web</h5>
+      <div class="site-footer">
+        <span class="social-icon">
+          {% if site.github_username %}
+            {% include icon-github.html username=site.github_username %}
+          {% endif %}
+        </span>
+        <span class="social-icon">
+          {% if site.twitter_username %}
+            {% include icon-twitter.html username=site.twitter_username %}
+          {% endif %}
+        </span>
+        <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe via RSS</a>
       </div>
     </div>
-
-    {% if page.comments %}
-      <amp-iframe width=600 height=140
-        layout="responsive"
-        sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
-        resizable
-        src="https://disqus.lavaux.lv/?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}#{{ page.url | md5 }}">
-        <div overflow tabindex="0" role="button" aria-label="Disqus Comments">Disqus Comments</div>
-      </amp-iframe>
-    {% endif %}
-
-  </article>
+  </div>
+  {% if page.comments %}
+    <amp-iframe width=600 height=140
+      layout="responsive"
+      sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+      resizable
+      src="https://disqus.lavaux.lv/?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}#{{ page.url | md5 }}">
+      <div overflow tabindex="0" role="button" aria-label="Disqus Comments">Disqus Comments</div>
+    </amp-iframe>
+  {% endif %}
 </main>
 
 {% include footer.html %}
