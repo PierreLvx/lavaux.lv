@@ -39,7 +39,7 @@ autoprefixer:
 sass:
   style: compressed
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-autoprefixer
   - jekyll-feed
