@@ -6,9 +6,9 @@ permalink: /about/
 
 Hi, and thanks for stopping by.
 
-My name is Pierre, I'm a full stack developer with some technical leadership experience. I like building pragmatic engineering teams, efficient systems and elegant solutions. I currently help startups grow with proper infrastructure, tooling and processes.
+My name is Pierre. I like building pragmatic engineering teams, efficient systems and elegant solutions. I currently help startups grow with proper infrastructure, tooling and processes.
 
-I work out of Paris, France.
+I am currently working with [SGH Capital](http://www.sghcapital.com/), out of Paris, France.
 
 #### Why this site ?
 
