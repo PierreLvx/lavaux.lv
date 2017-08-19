@@ -6,9 +6,7 @@ permalink: /about/
 
 Hi, and thanks for stopping by.
 
-My name is Pierre. I like building pragmatic engineering teams, efficient systems and elegant solutions. I currently help startups grow with proper infrastructure, tooling and processes.
-
-I am currently working with [SGH Capital](http://www.sghcapital.com/), out of Paris, France.
+My name is Pierre. I like building pragmatic engineering teams, efficient systems and elegant solutions. I am currently working with [SGH Capital](http://www.sghcapital.com/), out of Paris, France.
 
 #### Why this site ?
 
