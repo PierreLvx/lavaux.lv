@@ -426,7 +426,10 @@ body {
 
 .custom-font-loaded {
     .post-content {
-    font-family: 'Merriweather';
+        font-family: 'Merriweather';
+        p {
+            font-size: 18px;
+        }
     }
 }
 
