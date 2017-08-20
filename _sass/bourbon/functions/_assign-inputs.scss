@@ -1,5 +1,10 @@
 @function assign-inputs($inputs, $pseudo: null) {
-  $list : ();
+  @if $output-bourbon-deprecation-warnings == true {
+    @warn "[Bourbon] [Deprecation] `assign-inputs` is deprecated and will be " +
+    "removed in 5.0.0.";
+  }
+
+  $list: ();
 
   @each $input in $inputs {
     $input: unquote($input);
