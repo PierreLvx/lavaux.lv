@@ -1,4 +1,5 @@
-@import 'bourbon/bourbon';
+// That's the only piece of bourbon in use in this project.
+@import 'bourbon/addons/clearfix';
 @import 'syntax-highlighting';
 
 $grey-color:            #828282;
