@@ -13,6 +13,10 @@ Notable changes from the original theme include :
 
 I am open sourcing it so that you can tweak my fork too. The codebase is very small and delete key friendly.
 
+## Extra AMP Modules
+
+Extra AMP modules, such as Twitter and YouTube are enabled via the frontmatter.
+
 ## License
 
 Everything but the posts and images is under the MIT license.
