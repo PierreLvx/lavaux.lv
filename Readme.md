@@ -1,4 +1,4 @@
-# Amplify for Jekyll
+# Lavaux.lv
 
 [![Build Status](https://travis-ci.org/PierreLvx/lavaux.lv.svg?branch=master)](https://travis-ci.org/PierreLvx/lavaux.lv)
 
