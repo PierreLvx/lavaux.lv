@@ -29,7 +29,7 @@ Server:   stock
 Login:    root
 Password: VE24mdPD2HRG
 
-server-name login: 
+server-name login:
 ```
 
 **Now that you have the right password, go ahead and ssh into the machine, but make sure to ssh as `root` (the default username of OVH's rescue image), contrary to what the Cloud dashboard indicated earlier**.
