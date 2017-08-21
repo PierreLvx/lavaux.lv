@@ -47,4 +47,5 @@ plugins:
   - liquid-md5
 
 # Exclude these files from the build
-exclude: ['LICENSE', 'Readme.md', 'Gemfile.lock', Gemfile]
+# https://github.com/jekyll/jekyll/issues/2938#issuecomment-56237068
+exclude: ['LICENSE', 'Readme.md', 'Gemfile.lock', 'Gemfile', 'vendor']
