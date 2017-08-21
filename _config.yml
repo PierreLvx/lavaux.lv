@@ -45,3 +45,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - liquid-md5
+
+# Exclude these files from the build
+exclude: ['LICENSE', 'Readme.md', 'Gemfile.lock', Gemfile]

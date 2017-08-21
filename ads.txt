@@ -1,0 +1,2 @@
+# lavaux.lv/ads.txt
+# There is no advertising on this site.
