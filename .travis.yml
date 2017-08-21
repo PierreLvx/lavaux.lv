@@ -10,7 +10,7 @@ before_script:
 - mdl _posts/ *.md --style .mdl.rb
 script:
 - bundle exec jekyll build
-- ./.deploy.sh
+- sh .deploy.sh
 env:
   global:
     secure: PKto8BSr07L20rJJgjHV2ZHEmHtHnLp4KWzyWlwiQ6JkJef3MffSN72A1njLzIJx295xMkcEeUcZrkZPlqf0OD1UscqtkHjr6bCx7HlWvm1tgaH3XmNts9QM9Qx/FvB5zak4Mgc2axA2rtvLMbyGEh0exQSUqLbUs8789y+PWlVMMY3h8p4qcdN+0JBDaZ2moTc0yamrrBITuQlTbHahCsMoVKXUchr/rvDwweaS3LVxh5kyREa+aUD9CJULBzkPPnR+V5SC3G1F7f+4cHLqb7j2pbIG9RjJQfC1wK3tNOX0phkJpGZEBNf8BGZWLiRZwu8/KdLt4oNcROinDd2Tm/bpZHaGYcwWhQqAPT0ycmvivHe7SpDaPihXEVv6BPdq2JRADrHAr/EvvRl861R7tKRL7Bd1szLzHxK3stoT5sRcK5esb8oqihHD7wP4djKg3ZtZc46ycnWoZvi2NYORzanfG+fqVeCRzQiXAwi5WFsCHuCPcRoLA5X0doHRiVREYdQShQjKM28Fcxg/lrdk9/m9iIKf0Z53deiMQOA5+85ghgbuVGTuTX3NDkH80QL9RoLrvh+0E5rcse1G1N4Kxz12WRgPdPzfnq5fwR7bwOvCJWfoHNV5S12vTna8+qdnoaN3ycy0rV0g5vKArRk3WyL6nkz3kwkXFALBjpjZuqM=
