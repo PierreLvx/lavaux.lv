@@ -15,4 +15,4 @@ I am open sourcing it so that you can tweak my fork too. The codebase is very sm
 
 ## License
 
-Everything but the posts and images are under the MIT license.
+Everything but the posts and images is under the MIT license.
