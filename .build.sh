@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Only proceed script when started not by Pull Request.
 if [ $TRAVIS_PULL_REQUEST == "true" ]; then
@@ -8,9 +8,6 @@ fi
 
 # Enable error reporting to the console.
 set -e
-
-# Build site with jekyll, by default to `_site' folder.
-bundle exec jekyll build
 
 # Clone 'gh-pages' branch of the repository using encrypted GH_TOKEN for authentification.
 git clone -b gh-pages https://${GH_TOKEN}@github.com/PierreLvx/lavaux.lv.git ../lavaux.lv.git.gh-pages
