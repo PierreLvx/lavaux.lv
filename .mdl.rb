@@ -29,3 +29,6 @@ exclude_rule 'MD036'
 
 # First line in file should be a top level header
 exclude_rule 'MD041'
+
+# Trailing whitespace
+exclude_rule 'MD009'
