@@ -23,28 +23,32 @@ Make sure you checked [the Gmail setup](http://gmvault.org/gmail_setup.html) bef
     ```shell
     ssh pierre@192.168.1.63
     ```
+
 4. Switch to root. Use your password again:
 
     ```shell
     sudo -i
     ```
+
 5. Download and install the [Python Package Index](https://pypi.python.org/pypi):
 
     ```shell
     wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py
     ```
+
 6. Remove the pip setup script, and install `gmvault`:
 
     ```shell
     rm get-pip.py && pip install gmvault
     ```
+
 7. Create a folder to store the backups, otherwise they'll go to `$HOME/gmvault-db`:
 
     ```shell
     mkdir /volume1/gmvault
     ```
-8. Run `gmvault`. Notice the `--emails-only` option since I don't care about chats, and `-d`
-flag with my custom backup path:
+
+8. Run `gmvault`. Notice the `--emails-only` option since I don't care about chats, and `-d` flag with my custom backup path:
 
    ```shell
    gmvault sync your_account@gmail.com --emails-only -d /volume1/gmvault/your_account\@gmail.com/
@@ -61,16 +65,17 @@ Now, let's set up a cron job to have daily backups.
     ```shell
     vi /etc/crontab
     ```
+
 2. Edit the crontab. For daily/weekly backups you can use `-t quick`. Note that entries _must_ be delimited by tabs. This will run daily at 2AM :
 
-	```text
-	*	2	*	*	*	root	gmvault sync your_account@gmail.com --resume -t quick --emails-only -d /volume1/gmvault/your_account\@gmail.com/
-	```
+   ```text
+   *  2 * * * root  gmvault sync your_account@gmail.com --resume -t quick --emails-only -d /volume1/gmvault/your_account\@gmail.com/
+   ```
 
 3. Save your crontab and restart the cron service:
 
    ```shell
    synoservice -restart crond
    ```
-   
+
 You're all set!
