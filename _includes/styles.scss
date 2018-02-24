@@ -323,10 +323,13 @@ body {
         ul {
             list-style: square;
         }
+        ol {
+            margin-top: 32px;
+        }
         li {
             padding: 0;
             margin-left: 32px;
-            font-size: 20px;
+            font-size: 18px;
             line-height: $line-height;
             letter-spacing: -.002em;
             hyphens: auto;
@@ -484,6 +487,7 @@ pre.highlight {
     margin-right: -16px;
     border-radius: 0;
     line-height: 1.35;
+    text-align: initial;
 }
 
 .pagination {
