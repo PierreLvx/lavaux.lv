@@ -12,7 +12,7 @@ My name is Pierre. I like building pragmatic engineering teams, efficient system
 
 This site is a collection of notes and thoughts. I've been meaning to blog for a while, because I have greatly benefited from others sharing technical tips that have sharpened my skills, and pieces that have built up my critical thinking.
 
-I also share interesting links and quotes via [Pocket](https://getpocket.com/@lavaux "Pierre Lavaux on Pocket") and [Refind](https://refind.com/prlvx "Pierre Lavaux on Refind").
+I also share interesting links and quotes via [Pocket](https://getpocket.com/@lavaux "Pierre Lavaux on Pocket").
 
 #### Contact
 
