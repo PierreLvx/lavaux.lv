@@ -69,7 +69,7 @@ Now, let's set up a cron job to have daily backups.
 2. Edit the crontab. For daily/weekly backups you can use `-t quick`. Note that entries _must_ be delimited by tabs. This will run daily at 2AM :
 
    ```text
-   *  2 * * * root  gmvault sync your_account@gmail.com --resume -t quick --emails-only -d /volume1/gmvault/your_account\@gmail.com/
+   0 2 * * * root  gmvault sync your_account@gmail.com --resume -t quick --emails-only -d /volume1/gmvault/your_account\@gmail.com/
    ```
 
 3. Save your crontab and restart the cron service:
@@ -79,3 +79,5 @@ Now, let's set up a cron job to have daily backups.
    ```
 
 You're all set!
+
+**Update (May, 25th 2018):** A previous version of this article included a crontab that ran every minute for an hour, instead of once at a given hour. Thanks Kristian for the tip!
