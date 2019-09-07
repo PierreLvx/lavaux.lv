@@ -34,4 +34,4 @@ exclude_rule 'MD041'
 exclude_rule 'MD009'
 
 # Code blocks
-rule 'MD046', :style => 'consistent'
+exclude_rule 'MD046'
