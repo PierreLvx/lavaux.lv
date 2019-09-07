@@ -11,7 +11,7 @@ layout: default
   <div class="post-footer">
     <section class="share">
       <span class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></span>
-      <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter_username }}" target="_blank">
+      <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter.username }}" target="_blank">
         Share on {% include icon-twitter.html %}
       </a>
     </section>
@@ -34,8 +34,8 @@ layout: default
           {% endif %}
         </span>
         <span class="social-icon">
-          {% if site.twitter_username %}
-            {% include icon-twitter.html username=site.twitter_username %}
+          {% if site.twitter.username %}
+            {% include icon-twitter.html username=site.twitter.username %}
           {% endif %}
         </span>
         <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe via RSS</a>

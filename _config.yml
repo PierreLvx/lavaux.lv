@@ -19,12 +19,24 @@ author: "Pierre Lavaux"
 bio: >
   Cloud Architect and Digital Entrepreneur
 author_image: "/assets/images/pierre_lavaux.jpg"
-twitter_username: prlvx
 github_username: PierreLvx
 
 fb_url: pierre.lvx
 
 analytics_id: "UA-51062213-9"
+
+# SEO Settings
+
+twitter:
+  username: prlvx
+  card: summary
+
+social:
+  name: Pierre Lavaux
+  links:
+    - https://twitter.com/prlvx
+    - https://github.com/PierreLvx
+    - https://www.linkedin.com/in/pierrelavaux
 
 # Build settings
 markdown: kramdown
@@ -45,6 +57,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - liquid-md5
+  - jekyll-seo-tag
 
 # Exclude these files from the build
 # https://github.com/jekyll/jekyll/issues/2938#issuecomment-56237068
