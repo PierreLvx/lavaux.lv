@@ -32,3 +32,6 @@ exclude_rule 'MD041'
 
 # Trailing whitespace
 exclude_rule 'MD009'
+
+# Code blocks
+rule 'MD046', :style => 'consistent'
