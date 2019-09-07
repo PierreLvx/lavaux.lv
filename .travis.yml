@@ -1,10 +1,13 @@
 sudo: false
 language: ruby
 rvm:
-- 2.2
+- 2.5.3
 branches:
   only:
   - master
+before_install:
+- gem update --system
+- gem install bundler
 before_script:
 - gem install mdl
 - mdl _posts/ *.md --style .mdl.rb
