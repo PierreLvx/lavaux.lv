@@ -6,7 +6,7 @@ comments: true
 
 I had a few VMs configured with [ssmtp](https://github.com/badoo/ssmtp/commits/master) to relay a small number of emails, usually from cron jobs. Unfortunately, this project is no longer maintained so it's unfit for production, and while Postfix is a solid piece of software, I was looking for something very lightweigth.
 
-I came across [msmtp](http://msmtp.sourceforge.net/), which fit the bill perfectly and is trivial to set up.
+I came across [msmtp](https://marlam.de/msmtp/), which fit the bill perfectly and is trivial to set up.
 
 On a Debian based distro :
 
@@ -33,7 +33,7 @@ from FROM@YOURDOMAIN.TLD
 account default : mailgun
 ```
 
-You should definitely keep logging enabled. There's [a wealth of information](http://msmtp.sourceforge.net/doc/msmtp.html#Logging) that will come handy.
+You should definitely keep logging enabled. There's [a wealth of information](https://marlam.de/msmtp/msmtp.html#Logging) that will come handy.
 
 Using a service like Mailgun, rather than your own SMTP server, ensures better delivery of your email, along with detailed logs and sending stats. If these emails are somewhat critical to you, you may want to set up a secondary provider such a [Sendgrid](https://sendgrid.com/) so that you can failover easily, albeit manually – if you need this to be automated because they are mission critical, that's a job for Postfix.
 
@@ -51,9 +51,9 @@ from FROM@YOURDOMAIN.TLD
 
 Note that `user` *should* be `apikey`.
 
-If you need specific user configurations, you can create `~/.msmtprc` files. To route emails to different recipients, you can [set up aliases](http://msmtp.sourceforge.net/doc/msmtp.html#Aliases-file).
+If you need specific user configurations, you can create `~/.msmtprc` files. To route emails to different recipients, you can [set up aliases](https://marlam.de/msmtp/msmtp.html#Aliases-file).
 
-Also, you can [customize the timeout](http://msmtp.sourceforge.net/doc/msmtp.html#General-commands) per account using e.g. `timeout 60` to wait one minute.
+Also, you can [customize the timeout](https://marlam.de/msmtp/msmtp.html#General-commands) per account using e.g. `timeout 60` to wait one minute.
 
 Finally, send a test email from the command line :
 
@@ -62,3 +62,7 @@ echo "Subject: Testing msmtp" | sendmail -v your@email.tld
 ```
 
 If everything went well, you should see your test within a few seconds.
+
+**Update Sept. 8th 2019:**
+
+- `msmtp` links updated to current project homepage.
