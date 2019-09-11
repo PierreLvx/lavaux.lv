@@ -1,11 +1,9 @@
-// That's the only piece of bourbon in use in this project.
-@import 'bourbon/addons/clearfix';
 @import 'syntax-highlighting';
 
-$grey-color:            #828282;
-$grey-color-lighter:    rgba(221, 221, 221, .7);
-$grey-color-medium:     #656c7a;
-$black:                 #2a2e2e;
+$grey:            #828282;
+$grey-lighter:    rgba(221, 221, 221, .7);
+$grey-medium:     #656c7a;
+$black:           #2a2e2e;
 
 .icon {
     > svg {
@@ -25,7 +23,11 @@ amp-img[role=button] {
 }
 
 .cf {
-    @include clearfix;
+    &::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
 }
 
 $rs: 16px;
@@ -66,7 +68,7 @@ body {
     width: 100%;
     max-width: 800px;
     margin: 32px auto;
-    border-bottom: 1px solid $grey-color-lighter;
+    border-bottom: 1px solid $grey-lighter;
     box-sizing: border-box;
     @include respond-to(900) {
         padding: 0 $rs * 1;
@@ -82,7 +84,7 @@ body {
 
         a {
             text-decoration: none;
-            color: $grey-color-medium;
+            color: $grey-medium;
             transition: color 0.2s linear;
             &:hover {
                 color: $black;
@@ -132,7 +134,7 @@ body {
             color: #666;
         }
         .post-meta {
-            color: $grey-color-medium;
+            color: $grey-medium;
             line-height: 32px;
         }
     }
@@ -143,11 +145,11 @@ body {
 }
 
 .index-headline {
-    border-top: 1px solid $grey-color-lighter;
+    border-top: 1px solid $grey-lighter;
     margin: 0;
     padding: 16px 0;
     padding-bottom: 32px;
-    color: $grey-color-medium;
+    color: $grey-medium;
     font-size: $rs / 8 * 6;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -157,7 +159,7 @@ body {
     text-align: center;
     padding: $rs * 1 0 0;
     a {
-        color: $grey-color-medium;
+        color: $grey-medium;
         text-decoration: none;
         &:hover {
             color: $black;
@@ -172,7 +174,7 @@ body {
     max-width: 800px;
     font-size: $rs / 4 * 3;
     text-align: center;
-    color: $grey-color-medium;
+    color: $grey-medium;
     line-height: $rs * 1.5;
     a {
         color: #666;
@@ -189,7 +191,7 @@ body {
         line-height: 1.15;
     }
     .post-meta-text {
-        color: $grey-color-medium;
+        color: $grey-medium;
         letter-spacing: $font-spacing;
         font-weight: 400;
         font-style: normal;
@@ -250,14 +252,14 @@ body {
             transition: border-color .2s ease, color .2s ease;
             &:hover {
                 color: #777;
-                border-bottom: 2px solid $grey-color-medium;
+                border-bottom: 2px solid $grey-medium;
                 transition: border-color .2s ease, color .2s ease;
             }
         }
         .footnotes::before {
             display: block;
             height: 3px;
-            background: $grey-color-lighter;
+            background: $grey-lighter;
             width: 12.5%;
             content: '';
             margin-bottom: 32px;
@@ -395,7 +397,7 @@ body {
                 line-height: 1.3;
                 padding-left: 100px;
                 &.published {
-                    color: $grey-color-medium;
+                    color: $grey-medium;
                 }
             }
         }
@@ -414,7 +416,7 @@ body {
                 font-size: 14px;
                 line-height: 2;
                 a {
-                    color: $grey-color-medium;
+                    color: $grey-medium;
                     &:hover {
                         text-decoration: underline;
                     }
@@ -445,7 +447,7 @@ body {
     padding: 20px 0 0;
     a {
         text-decoration: none;
-        color: $grey-color-medium;
+        color: $grey-medium;
         padding-left: 12px;
         float: right;
         &:hover {
@@ -510,8 +512,8 @@ a.logo {
     transition: opacity .2s linear;
     font-size: 2em;
     font-weight: 600;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
+    margin-block-start: .67em;
+    margin-block-end: .67em;
     display: block;
     &:hover {
         text-decoration: none;
@@ -520,5 +522,5 @@ a.logo {
 }
 
 span.published {
-    color: $grey-color-medium;
+    color: $grey-medium;
 }
