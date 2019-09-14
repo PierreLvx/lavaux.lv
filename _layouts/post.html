@@ -11,7 +11,7 @@ layout: default
   <div class="post-footer">
     <section class="share">
       <span class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></span>
-      <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter.username }}" target="_blank">
+      <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter.username }}" target="_blank" rel="noopener">
         Share on {% include icon-twitter.html %}
       </a>
     </section>
@@ -44,6 +44,7 @@ layout: default
   </div>
   {% if page.comments %}
     <amp-iframe width=600 height=140
+      title="Comment with Disqus"
       layout="responsive"
       sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
       resizable
