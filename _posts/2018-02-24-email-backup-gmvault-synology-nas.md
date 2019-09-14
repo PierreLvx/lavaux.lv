@@ -12,7 +12,7 @@ There are posts online that achieve this using `ipkg` and compiling dependencies
 
 Make sure you checked [the Gmail setup](http://gmvault.org/gmail_setup.html) beforehand.
 
-### Initial Setup
+## Initial Setup
 
 1. Log onto DSM, and install Python via the **Package Manager**.
 
@@ -56,7 +56,7 @@ Make sure you checked [the Gmail setup](http://gmvault.org/gmail_setup.html) bef
 
 It will run for a while now. Repeat steps 7 and 8 if you have multiple accounts.
 
-### Automated backups with cron
+## Automated backups with cron
 
 Now, let's set up a cron job to have daily backups.
 

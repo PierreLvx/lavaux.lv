@@ -9,7 +9,7 @@ images: true
 
 These studies disregard basic statistical analysis principles and come up with **impressive numbers derived from absurd averages**. Since adblocking is a hot topic, I believe they are primarily driven by quick-win PR strategies, because anyone with a basic understanding of online advertising should notice major flaws.
 
-### Flawed methodologies
+## Flawed methodologies
 
 Take the [following equation](https://www.adback.co/revenue-loss-adblock-websites-ranking#methodology) for yearly losses per site:
 
@@ -42,7 +42,7 @@ The result depends on **too many assumptions**.
 
 > "**I wouldn’t feel confident using any of these numbers to predict actual traffic**. In particular, I’m baffled by the number of otherwise savvy marketers, investors, and business people who continue to rely on Alexa data." - Rand Fishkin, Moz Co-founder.
 
-### Closing words
+## Closing words
 
 **These are not studies but data mashups.** Unless we finally research this issue with proper hypotheses and limited assumptions, the true cost of adblocking will remain unknown. This is a topic with serious implications, that is bound to drive deep changes with [more activity happening server side](https://www.linkedin.com/pulse/my-thoughts-how-internet-industry-circumvent-future-stupid-bourcier) to circumvent both the blockers _and_ privacy directives[^3], which may [lay waste to a distorted ad market](http://digiday.com/podcast/dcn-jason-kint-digiday-podcast/) that’s too reliant on data and intermediaries.
 

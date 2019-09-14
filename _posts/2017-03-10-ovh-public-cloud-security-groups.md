@@ -14,7 +14,7 @@ And so does [OpenStack](https://docs.openstack.org/admin-guide/cli-nova-manage-p
 
 Even Lightsail, Amazon's easy to use Virtual Private Servers, come with [default rules](https://lightsail.aws.amazon.com/ls/docs/overview/article/understanding-firewall-and-port-mappings-in-amazon-lightsail) only allowing SSH and web traffic.
 
-### The issue
+## The issue
 
 OVH [decided otherwise](https://www.ovh.com/fr/g1925.configurer_un_groupe_de_securite)[^1]. **New cloud projects allow all incoming traffic**.
 
@@ -22,7 +22,7 @@ OVH [decided otherwise](https://www.ovh.com/fr/g1925.configurer_un_groupe_de_sec
 
 At the time of this writing, the web interface shows zero warning, and the firewall tab is unavailable. Yet, this is the interface most people new to the platform, including beginners and hobbyists with limited system administration acumen, will use to spin up new instances, unknowingly leaving them wide open.
 
-### How to fix this?
+## How to fix this?
 
 You can use the `openstack security group` command line, and if you feel comfortable doing so you probably don't need my help.
 
@@ -36,7 +36,7 @@ If this is your first time accessing Horizon, follow [this guide](https://www.ov
 4. Delete ingress rules that allowed all inbound traffic from CIDR remotes (you should see IP v4 and v6 notation). Unless you have a specific security posture, you can keep the rules with a “default” remote – these are for private networking within your project.
 5. Rinse and repeat in all regions (BHS1, GRA1, SBG1) and cloud projects.
 
-### How bad is it?
+## How bad is it?
 
 Recent [ransom attacks](https://www.bleepingcomputer.com/news/security/database-ransom-attacks-have-now-hit-mysql-servers/) on all kinds of databases have reiterated the critical importance of sane security defaults. With over [100.000 instances in production](http://www.journaldunet.com/solutions/cloud-computing/1186311-le-cloud-ovh-enregistre-100-000-vm-en-production/) (article in French), OVH should no longer make convenience-based security choices. I manage around 30 instances on this cloud, and I can tell you firsthand there is active scanning going on.
 
