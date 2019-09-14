@@ -1,21 +1,20 @@
+@import 'colors';
+@import 'fonts';
 @import 'syntax-highlighting';
 
-$grey:            #828282;
-$grey-lighter:    rgba(221, 221, 221, .7);
-$grey-medium:     #656c7a;
-$black:           #2a2e2e;
+$rs: 16px;
 
 .icon {
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: $rs;
+        height: $rs;
         vertical-align: middle;
     }
 }
 
 amp-img {
-    background-color: grey;
+    background-color: $grey;
 }
 
 amp-img[role=button] {
@@ -30,21 +29,12 @@ amp-img[role=button] {
     }
 }
 
-$rs: 16px;
-
-$font-serif: Charter, Georgia, Cambria, 'Times New Roman', Times, serif;
-$font-sans: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-
-$font-spacing: -.02em;
-$line-height: 1.6;
-
 @mixin respond-to($breakpoint) {
     @media only screen and (max-width: $breakpoint + px) {
         @content;
     }
 }
 
-// Only needed for syntax highlighting
 %vertical-rhythm {
     margin-bottom: $rs;
 }
@@ -67,7 +57,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 800px;
-    margin: 32px auto;
+    margin: $rs * 2 auto;
     border-bottom: 1px solid $grey-lighter;
     box-sizing: border-box;
     @include respond-to(900) {
@@ -80,7 +70,7 @@ body {
         top: 10px;
         right: $rs;
         font-size: 18px;
-        line-height: 32px;
+        line-height: $rs * 2;
 
         a {
             text-decoration: none;
@@ -105,11 +95,11 @@ body {
     }
 
     .article-item {
-        margin-bottom: 32px;
+        margin-bottom: $rs * 2;
     }
 
     article {
-        padding: 32px 0 0 0;
+        padding: $rs * 2 0 0 0;
         &:last-child {
             border-bottom: 0;
         }
@@ -131,11 +121,11 @@ body {
             letter-spacing: $font-spacing;
             font-size: 20px;
             line-height: $line-height;
-            color: #666;
+            color: $grey-medium;
         }
         .post-meta {
-            color: $grey-medium;
-            line-height: 32px;
+            color: $grey;
+            line-height: $rs * 2;
         }
     }
 }
@@ -147,8 +137,8 @@ body {
 .index-headline {
     border-top: 1px solid $grey-lighter;
     margin: 0;
-    padding: 16px 0;
-    padding-bottom: 32px;
+    padding: $rs 0;
+    padding-bottom: $rs * 2;
     color: $grey-medium;
     font-size: $rs / 8 * 6;
     text-transform: uppercase;
@@ -177,7 +167,7 @@ body {
     color: $grey-medium;
     line-height: $rs * 1.5;
     a {
-        color: #666;
+        color: $grey;
         text-decoration: none;
         &:hover {
             color: $black;
@@ -207,7 +197,6 @@ body {
         font-family: $font-serif;
         font-weight: 300;
         text-align: justify;
-        color: $black;
         strong,
         b {
             font-weight: 700;
@@ -241,7 +230,7 @@ body {
             font-size: 20px;
             line-height: $line-height;
             letter-spacing: -.002em;
-            margin-top: 32px;
+            margin-top: $rs * 2;
             hyphens: auto;
             font-feature-settings: 'liga', 'dlig';
         }
@@ -251,7 +240,7 @@ body {
             border-bottom: 2px solid $black;
             transition: border-color .2s ease, color .2s ease;
             &:hover {
-                color: #777;
+                color: $grey;
                 border-bottom: 2px solid $grey-medium;
                 transition: border-color .2s ease, color .2s ease;
             }
@@ -262,10 +251,10 @@ body {
             background: $grey-lighter;
             width: 12.5%;
             content: '';
-            margin-bottom: 32px;
+            margin-bottom: $rs * 2;
         }
         .footnotes {
-            margin-top: 32px;
+            margin-top: $rs * 2;
         }
         .footnote {
             margin-left: 2px;
@@ -279,18 +268,18 @@ body {
         }
         amp-img,
         amp-youtube {
-            margin-top: 32px;
+            margin-top: $rs * 2;
         }
         figure {
             margin: 0;
-            padding: 0 0 32px;
+            padding: 0 0 $rs * 2;
         }
         figcaption {
             font-weight: 400;
             font-style: italic;
-            font-size: 16px;
+            font-size: $rs;
             line-height: 1.3;
-            color: #666;
+            color: $grey;
             outline: 0;
             z-index: 300;
             text-align: center;
@@ -300,12 +289,12 @@ body {
             padding: 0;
             display: block;
             width: 15%;
-            margin: 32px auto;
+            margin: $rs * 2 auto;
             border: 0px solid #ddd;
             border-top: 1px solid #ddd;
         }
         blockquote {
-            margin: 0 0 32px;
+            margin: 0 0 $rs * 2;
             margin-left: -26px;
             border-left: 3px solid #57ad68;
             padding-left: 20px;
@@ -315,7 +304,7 @@ body {
             }
             @include respond-to(832) {
                 margin-left: 0;
-                padding-left: 16px;
+                padding-left: $rs;
             }
         }
         ul, ol {
@@ -326,11 +315,11 @@ body {
             list-style: square;
         }
         ol {
-            margin-top: 32px;
+            margin-top: $rs * 2;
         }
         li {
             padding: 0;
-            margin-left: 32px;
+            margin-left: $rs * 2;
             font-size: 18px;
             line-height: $line-height;
             letter-spacing: -.002em;
@@ -349,8 +338,7 @@ body {
 
 .content {
     .author-image {
-        background-image: url({{ site.baseurl }}{{site.author_image}});
-        display: inline-block;
+        background-image: url('{{ site.baseurl }}{{site.author_image}}');
         float: left;
         background-size: cover;
         border-radius: 100%;
@@ -375,7 +363,7 @@ body {
                 margin-bottom: 18px;
             }
             a {
-                color: black;
+                color: $black;
                 text-decoration: none;
                 &:hover {
                     color: $black;
@@ -458,12 +446,13 @@ body {
 
 pre,
 code {
-    font-size: 16px;
+    font-size: $rs;
     border: 1px solid #e8e8e8;
     border-radius: 3px;
     background: #faf9f9;
+    color: $black;
     font-feature-settings: initial;
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: $font-mono;
     font-weight: 400;
 }
 
@@ -484,9 +473,9 @@ pre {
 
 pre.highlight {
     border: none;
-    padding: 32px;
-    margin-left: -16px;
-    margin-right: -16px;
+    padding: $rs * 2;
+    margin-left: -$rs;
+    margin-right: -$rs;
     border-radius: 0;
     line-height: 1.35;
     text-align: initial;
