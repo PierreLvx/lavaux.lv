@@ -106,7 +106,7 @@ body {
         .post-title {
             letter-spacing: $font-spacing;
             font-size: $font-size-large;
-            margin: 0;
+            margin: 0 0 32px 0;
             a {
                 text-decoration: none;
                 color: $black;
@@ -437,8 +437,6 @@ body {
     a {
         text-decoration: none;
         color: $grey-medium;
-        padding-left: 12px;
-        float: right;
         &:hover {
             color: $black;
         }
@@ -512,5 +510,9 @@ a.logo {
 }
 
 span.published {
-    color: $grey-medium;
+    color: $grey;
+}
+
+.reading-time {
+    color: $grey;
 }

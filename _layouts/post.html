@@ -4,13 +4,14 @@ layout: default
 <main class="content">
   <article class="post">
     <h1 class="post-title">{{ page.title }}</h1>
+    <span class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></span> •
+    {% include reading-time.html content=content %}
     <section class="post-content">
       {{ content }}
     </section>
   </article>
   <div class="post-footer">
     <section class="share">
-      <span class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></span>
       <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter.username }}" target="_blank" rel="noopener">
         Share on {% include icon-twitter.html %}
       </a>
