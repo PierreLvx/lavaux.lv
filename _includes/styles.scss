@@ -255,6 +255,10 @@ body {
         }
         .footnotes {
             margin-top: $rs * 2;
+            p,
+            li {
+                font-size: 1rem;
+            }
         }
         .footnote {
             margin-left: 2px;
