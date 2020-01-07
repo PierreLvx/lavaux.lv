@@ -10,14 +10,14 @@
 title: Pierre Lavaux
 email: pierre@lavaux.lv
 description: >
-  A collection of technical notes and thoughts.
+  Journal
 baseurl: ""  # the subpath of your site, e.g. /blog
 url: "https://lavaux.lv"  # the base hostname & protocol for your site
 paginate: 5  # The number of posts to show per page on your homepage
 
 author: "Pierre Lavaux"
 bio: >
-  Cloud Architect and Digital Entrepreneur
+  Partner at SGH Capital
 author_image: "/assets/images/pierre_lavaux.jpg"
 github_username: PierreLvx
 
@@ -26,7 +26,6 @@ fb_url: pierre.lvx
 analytics_id: "UA-51062213-9"
 
 # SEO Settings
-
 twitter:
   username: prlvx
   card: summary
