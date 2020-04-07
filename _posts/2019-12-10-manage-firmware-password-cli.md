@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Manage your firmware password using the command line (Mac OS)
+title: Manage your Mac OS firmware password using the command line
 comments: true
 ---
 
