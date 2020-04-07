@@ -59,3 +59,5 @@ plugins:
 # Exclude these files from the build
 # https://github.com/jekyll/jekyll/issues/2938#issuecomment-56237068
 exclude: ['LICENSE', 'Readme.md', 'Gemfile.lock', 'Gemfile', 'vendor']
+
+include: ['_headers']

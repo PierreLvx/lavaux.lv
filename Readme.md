@@ -1,6 +1,6 @@
 # Lavaux.lv
 
-[![Build Status](https://travis-ci.org/PierreLvx/lavaux.lv.svg?branch=master)](https://travis-ci.org/PierreLvx/lavaux.lv)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e1eab642-9398-476a-9297-9ebc172f13db/deploy-status)](https://app.netlify.com/sites/modest-agnesi-a72970/deploys)
 
 This is my personal blog, based on [Amplify](https://github.com/ageitgey/amplify).
 
@@ -11,7 +11,7 @@ Notable changes from the original theme include :
 - Cleaner code blocks ;
 - Support for AMP Analytics ([merged upstream](https://github.com/ageitgey/amplify/pull/20)).
 
-I am open sourcing it so that you can tweak my fork too. The codebase is very small and delete key friendly.
+I am open sourcing it so that you can tweak my fork too.
 
 ## Extra AMP Modules
 
