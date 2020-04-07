@@ -196,9 +196,6 @@ body {
 
     .post-content {
         width: 100%;
-        font-family: $font-serif;
-        font-weight: 300;
-        
         margin-top: $rs * 2;
         strong,
         b {
@@ -428,12 +425,6 @@ body {
     }
 }
 
-.custom-font-loaded {
-    .post-content {
-        font-family: 'Merriweather';
-    }
-}
-
 .username {
     margin-left: 8px;
 }
@@ -451,7 +442,8 @@ body {
 
 pre,
 code {
-    font-size: $rs;
+    font-size: 14px;
+    line-height: 1.5;
     border: 1px solid #e8e8e8;
     border-radius: 3px;
     background: #faf9f9;
