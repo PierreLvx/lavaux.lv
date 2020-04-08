@@ -15,6 +15,6 @@ Today, I am migrating this blog to [Netlify](https://www.netlify.com/), which I 
 - **SSL certificate powered by Let's Encrypt**, instead of a Cloudflare SNI certificate with random and sometimes sketchy domains.
 - **Deploy previews for pull requests**, which makes it very easy to test changes without breaking the live version.
 
-GitHub provides pages as a convenience to open source community. On the other hand, static hosting is Netlify's core business which makes them more likely to keep investing in the JAMstack and roll out features such as [authentication](https://docs.netlify.com/visitor-access/identity/), [forms](https://docs.netlify.com/forms/setup/) and [serverless](https://docs.netlify.com/functions/overview/) functions.
+GitHub provides Pages as a convenience to the open source community. On the other hand, static hosting is Netlify's core business which makes them more likely to keep investing in the JAMstack and roll out features such as [authentication](https://docs.netlify.com/visitor-access/identity/), [forms](https://docs.netlify.com/forms/setup/) and [serverless](https://docs.netlify.com/functions/overview/) functions.
 
 If you are not familiar with Netlify, do check them out. They have a very generous free tier with 300 build minutes and 100 GB of bandwidth per month, which is plenty for a personal website.
