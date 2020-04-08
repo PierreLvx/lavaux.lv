@@ -1,6 +1,6 @@
 # Lavaux.lv
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e1eab642-9398-476a-9297-9ebc172f13db/deploy-status)](https://app.netlify.com/sites/modest-agnesi-a72970/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e1eab642-9398-476a-9297-9ebc172f13db/deploy-status)](https://app.netlify.com/sites/lavaux-lv/deploys)
 
 This is my personal blog, based on [Amplify](https://github.com/ageitgey/amplify).
 
