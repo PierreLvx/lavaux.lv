@@ -6,7 +6,11 @@ permalink: /about/
 
 Hi, and thanks for stopping by.
 
-My name is Pierre. I like building pragmatic engineering teams, efficient systems and elegant solutions. I am currently working with [SGH Capital](http://www.sghcapital.com/), out of Paris, France.
+My name is Pierre. I like building pragmatic engineering teams, efficient systems and elegant solutions.
+
+I am currently investing with [SGH Capital](http://www.sghcapital.com/), an early-stage venture capital firm.
+
+Some of the investments I led are listed on [Crunchbase](https://www.crunchbase.com/person/pierre-lavaux "Pierre Lavaux on Crunchbase") and [AngelList](https://angel.co/u/pierrelavaux "Pierre Lavaux on AngelList")
 
 #### Why this site ?
 

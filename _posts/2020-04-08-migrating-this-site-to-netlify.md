@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migrating this site from GitHub pages to Netlify
+title: Migrating this site from GitHub Pages to Netlify
 description: Why I have migrated my blog from GitHub pages to Netlify and some of the immediate benefits.
 comments: true
 ---
