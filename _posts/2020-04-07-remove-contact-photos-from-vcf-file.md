@@ -3,6 +3,7 @@ layout: post
 title: Batch remove photos from VCF files and Apple Contacts
 description: How to use a python script to remove contact photos and other fields from VCF files.
 comments: true
+tags: tips
 ---
 
 Over the years, I have tried many services to enrich my address book and to keep my contacts up to date. Yet, none of the solutions were doing well enough for me to leave them on autopilot.

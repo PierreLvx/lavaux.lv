@@ -2,6 +2,7 @@
 layout: post
 title: Finding your OVH Public Cloud rescue password
 comments: true
+tags: tips
 ---
 
 OpenStack lets you rescue an instance, by launching a rescue VM with a temporary root password. You can then mount the filesystem, and perform whatever fixes you have to do, such as replacing a lost SSH key. On OVH however, the password shown in the Manager is invalid.

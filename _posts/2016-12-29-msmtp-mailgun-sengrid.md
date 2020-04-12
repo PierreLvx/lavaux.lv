@@ -2,6 +2,7 @@
 layout: post
 title: Configure msmtp to use Mailgun or Sendgrid
 comments: true
+tags: tips
 ---
 
 I had a few VMs configured with [ssmtp](https://github.com/badoo/ssmtp/commits/master) to relay a small number of emails, usually from cron jobs. Unfortunately, this project is no longer maintained so it's unfit for production, and while Postfix is a solid piece of software, I was looking for something very lightweigth.

@@ -2,6 +2,7 @@
 layout: post
 title: How to back up your Gmail/G Suite emails on a Synology NAS
 comments: true
+tags: tips
 ---
 
 This weekend I reviewed my email backup strategy and decided to make daily backups of all my accounts directly on my NAS. Since they are all Google-based, I went with `gmvault` on my Synology server. Here's a walkthrough.

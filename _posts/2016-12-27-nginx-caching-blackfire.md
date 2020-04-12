@@ -2,6 +2,7 @@
 layout: post
 title: Blackfire profiling and NGINX microcaching
 comments: true
+tags: tips
 ---
 
 I am a big fan of [Blackfire](https://blackfire.io/), the PHP profiler from [Sensio Labs](https://sensiolabs.com/en). It is very easy to install and comes with a handy GUI. In the past, tooling such as [XDebug](https://xdebug.org/) + CacheGrind was so tedious that we usually kept profilers for larger projects with critical performance implications.

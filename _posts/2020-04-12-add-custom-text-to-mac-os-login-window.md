@@ -3,6 +3,7 @@ layout: post
 title: Setting a lock message on your login window with the terminal (Mac OS)
 images: true
 comments: true
+tags: tips
 ---
 
 Apple provides [step-by-step instructions](https://support.apple.com/en-us/HT203580) to set a lock message on the login window of your Mac. This spot is very useful to display a company policy or your personal contact details if your laptop is lost.

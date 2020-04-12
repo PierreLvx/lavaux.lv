@@ -2,6 +2,7 @@
 layout: post
 title: Manage your Mac OS firmware password using the command line
 comments: true
+tags: tips
 ---
 
 A firmware password prevents starting up from any internal or external storage device other than the startup disk you've selected. It's a great way of protecting your computer from unauthorized tampering and access.

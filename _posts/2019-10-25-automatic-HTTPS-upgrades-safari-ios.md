@@ -2,6 +2,7 @@
 layout: post
 title: Enabling Automatic HTTPS Upgrades on Safari (iOS)
 comments: true
+tags: tips
 ---
 
 I have been using the [Brave browser](https://brave.com/) as my main browser for almost two months now. One of its privacy-enhancing features is automatic HTTPS upgrades, which I feel should be a default for all browsers.

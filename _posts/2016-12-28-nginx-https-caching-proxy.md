@@ -2,6 +2,7 @@
 layout: post
 title: Caching unsecure static content on an NGINX HTTPS reverse proxy
 comments: true
+tags: tips
 ---
 
 A service I manage relies on a third party which still doesn't provide HTTPS. Their endpoint sometimes shows excessive latency as well (>700ms TTFB). Unfortunately, this service isn't trivial to replace (aviation charts), and building our own alternative is out of the question at the moment.
