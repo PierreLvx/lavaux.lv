@@ -9,7 +9,8 @@ Notable changes from the original theme include :
 - Larger layout on tablet and desktop ;
 - Refined typography ;
 - Cleaner code blocks ;
-- Support for AMP Analytics ([merged upstream](https://github.com/ageitgey/amplify/pull/20)).
+- Support for AMP Analytics ([merged upstream](https://github.com/ageitgey/amplify/pull/20)) ;
+- Support for dark mode.
 
 I am open sourcing it so that you can tweak my fork too.
 
