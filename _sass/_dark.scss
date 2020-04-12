@@ -1,0 +1,18 @@
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --color-text-default: rgba(255, 255, 255, .85);
+        --color-text-secondary: rgba(135, 148, 173, 1);
+    }
+
+    body {
+        background-color: #2a2e2e;
+    }
+
+    pre,
+    code,
+    .highlighter-rouge .highlight {
+        background-color: black;
+        border-color: transparent;
+    }
+}
