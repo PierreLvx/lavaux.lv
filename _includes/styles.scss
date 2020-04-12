@@ -85,9 +85,9 @@ a {
         line-height: $rs * 2;
 
         a {
-            color: $grey-medium;
+            color: $grey;
             &:hover {
-                opacity: .85;
+                opacity: .75;
             }
         }
     }
@@ -127,7 +127,7 @@ a {
             letter-spacing: $font-spacing;
             font-size: 20px;
             line-height: $line-height;
-            color: $grey-medium;
+            color: $grey;
         }
         .post-meta {
             color: $grey;
@@ -145,7 +145,7 @@ a {
     margin: 0;
     padding: $rs 0;
     padding-bottom: $rs * 2;
-    color: $grey-medium;
+    color: $grey;
     font-size: $rs / 8 * 6;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -163,7 +163,7 @@ a {
     max-width: 800px;
     font-size: $rs / 4 * 3;
     text-align: center;
-    color: $grey-medium;
+    color: $grey;
     line-height: $rs * 1.5;
 }
 
@@ -173,7 +173,7 @@ a {
         line-height: 1.15;
     }
     .post-meta-text {
-        color: $grey-medium;
+        color: $grey;
         letter-spacing: $font-spacing;
         font-weight: 400;
         font-style: normal;
@@ -228,11 +228,11 @@ a {
         a {
             color: $black;
             border-bottom: 2px solid $black;
-            transition: border-color .2s ease, color .2s ease;
+            transition: .2s ease;
             &:hover {
                 color: $grey;
-                border-bottom: 2px solid $grey-medium;
-                transition: border-color .2s ease, color .2s ease;
+                border-bottom: 2px solid $grey;
+                transition: .2s ease;
             }
         }
         .footnotes::before {
@@ -372,7 +372,7 @@ a {
                 line-height: 1.3;
                 padding-left: 100px;
                 &.published {
-                    color: $grey-medium;
+                    color: $grey;
                 }
             }
         }
@@ -390,9 +390,6 @@ a {
                 text-align: left;
                 font-size: 14px;
                 line-height: 2;
-                a {
-                    color: $grey-medium;
-                }
                 .social-icon {
                     display: block;
                 }
@@ -408,7 +405,7 @@ a {
 .share {
     padding: 20px 0 0;
     a {
-        color: $grey-medium;
+        color: $grey;
         &:hover {
             color: $black;
         }
@@ -476,7 +473,7 @@ a.logo {
     margin-block-end: .67em;
     display: block;
     &:hover {
-        opacity: .8;
+        opacity: .75;
     }
 }
 
