@@ -5,7 +5,7 @@ comments: true
 tags: tips
 ---
 
-Lately, I have been building some internal tools to speed up to day-to-day operations at [SGH Capital](https://www.sghcapital.com/).
+Lately, I have been building some internal tools to speed up the day-to-day operations at [SGH Capital](https://www.sghcapital.com/).
 
 These tools share several JavaScript dependencies and a common library of UI components, so it seemed like a good opportunity to build an internal `npm` package which we can then require in multiple projects.
 
