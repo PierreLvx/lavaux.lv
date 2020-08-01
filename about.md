@@ -10,7 +10,7 @@ My name is Pierre. I like building pragmatic engineering teams, efficient system
 
 I am currently investing with [SGH Capital](http://www.sghcapital.com/), an early-stage venture capital firm.
 
-Some of the investments I led are listed on [Crunchbase](https://www.crunchbase.com/person/pierre-lavaux "Pierre Lavaux on Crunchbase") and [AngelList](https://angel.co/u/pierrelavaux "Pierre Lavaux on AngelList")
+Most of the investments I led are listed on [Crunchbase](https://www.crunchbase.com/person/pierre-lavaux "Pierre Lavaux on Crunchbase") and [AngelList](https://angel.co/u/pierrelavaux "Pierre Lavaux on AngelList")
 
 #### Why this site ?
 
@@ -26,4 +26,4 @@ If you wish to email me, it's my first name at this domain. To contact me secure
 
 Found a mistake or a typo ? Do let me know, or [raise an issue](https://github.com/PierreLvx/lavaux.lv/issues). Thanks!
 
-This site is built with [Jekyll](http://jekyllrb.com) + [Amplify](https://github.com/PierreLvx/lavaux.lv).
+This site is built with [Jekyll](http://jekyllrb.com).
