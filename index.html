@@ -4,24 +4,12 @@ layout: default
 
 <main class="content" role="main">
 
-  <div class="cf frame">
     {% for post in paginator.posts %}
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-        <div class="article-item">
-          <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-          </header>
-          <section class="post-excerpt" itemprop="description">
-            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-          </section>
-          <div class="post-meta">
-            <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time> •
-            {% include reading-time.html content=post.content %}
-          </div>
-        </div>
+      <article class="post-item" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+        <time datetime="{{ post.date | date_to_long_string }}" class="post-meta">{{ post.date | date_to_long_string }}</time>
       </article>
     {% endfor %}
-  </div>
 
   <nav class="pagination" role="navigation">
     {% if paginator.next_page %}

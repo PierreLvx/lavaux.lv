@@ -13,7 +13,7 @@ description: >
   Journal
 baseurl: ""  # the subpath of your site, e.g. /blog
 url: "https://lavaux.lv"  # the base hostname & protocol for your site
-paginate: 6  # The number of posts to show per page on your homepage
+paginate: 20  # The number of posts to show per page on your homepage
 
 author: "Pierre Lavaux"
 bio: >

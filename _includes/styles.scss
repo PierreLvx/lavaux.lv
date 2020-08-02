@@ -28,14 +28,6 @@ amp-img[role=button] {
     cursor: pointer;
 }
 
-.cf {
-    &::after {
-        clear: both;
-        content: "";
-        display: table;
-    }
-}
-
 @mixin respond-to($breakpoint) {
     @media only screen and (max-width: $breakpoint + px) {
         @content;
@@ -58,6 +50,7 @@ body {
     color: var(--color-text-default);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     hyphens: auto;
     font-feature-settings: 'liga', 'dlig';
 }
@@ -77,7 +70,7 @@ a {
     width: 100%;
     max-width: 800px;
     margin: $rs * 2 auto;
-    border-bottom: 1px solid var(--grey-lighter);
+    border-bottom: 2px solid var(--grey-lighter);
     box-sizing: border-box;
     @include respond-to(900) {
         padding: 0 $rs * 1;
@@ -87,7 +80,7 @@ a {
         display: block;
         position: absolute;
         top: 10px;
-        right: $rs;
+        right: 0;
         font-size: 18px;
         line-height: $rs * 2;
 
@@ -114,8 +107,30 @@ a {
         margin-bottom: $rs * 2;
     }
 
+    .post-item {
+        border-bottom: 1px solid var(--grey-lighter);
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 3;
+
+        &:last-of-type {
+            border-bottom: 1px solid transparent;
+        }
+        .post-title {
+            font-size: 1rem;
+            margin: 0;
+            flex-grow: 1; // Safari Bugfix
+        }
+        .post-meta {
+            margin-left: 1rem;
+        }
+    }
+
     article {
-        padding: $rs * 2 0 0 0;
+        padding-top: $rs * 2;
+        padding-bottom: $rs * 2;
         &:last-child {
             border-bottom: 0;
         }
@@ -139,6 +154,7 @@ a {
         .post-meta {
             color: var(--color-text-secondary);
             line-height: $rs * 2;
+            white-space: nowrap;
         }
     }
 }
@@ -160,7 +176,7 @@ a {
 
 .pagination {
     text-align: center;
-    padding: $rs * 1 0 0;
+    padding: $rs * 2 0 0;
 }
 
 .site-footer {
@@ -176,7 +192,6 @@ a {
 
 .post {
     .post-title {
-        font-weight: 600;
         line-height: 1.15;
     }
     .post-meta-text {
@@ -194,15 +209,10 @@ a {
     .post-content {
         width: 100%;
         margin-top: $rs * 2;
-        strong,
-        b {
-            font-weight: 700;
-        }
         h1, h2, h3, h4, h5, h6 {
             font-family: $font-sans;
             letter-spacing: $font-spacing;
             font-style: normal;
-            font-weight: 700;
             margin-bottom: 0;
         }
         h2, h3, h4, h5, h6 {
@@ -228,9 +238,6 @@ a {
             margin-top: $rs;
             margin-bottom: $rs;
             text-align: justify;
-        }
-        p:first-of-type {
-            margin-top: $rs * 3;
         }
         a {
             color: var(--color-text-default);
@@ -294,13 +301,15 @@ a {
             border-top: 1px solid var(--grey-lighter);
         }
         blockquote {
-            margin: 0 0 $rs * 2;
+            margin-top: $rs * 2;
+            margin-bottom: $rs * 2;
             margin-left: -26px;
+            margin-right: 0;
             border-left: 3px solid #57ad68;
             padding-left: 20px;
             p {
-                padding-bottom: 4px;
-                padding-top: 4px
+                padding-bottom: $rs / 4;
+                padding-top: $rs / 4;
             }
             @include respond-to(832) {
                 margin-left: 0;
@@ -344,64 +353,6 @@ a {
         float: left;
         background-size: cover;
         border-radius: 100%;
-    }
-    .bottom-teaser {
-        padding: 50px 0;
-        .isLeft {
-            float: left;
-            width: 47%;
-            box-sizing: border-box;
-            @include respond-to(900) {
-                width: 100%;
-                padding-bottom: $rs * 2;
-            }
-            .bio {
-                margin-top: 18px;
-                margin-bottom: 18px;
-            }
-            .username {
-                margin-left: 4px;
-                margin-right: 18px;
-                margin-bottom: 18px;
-            }
-            .author-image {
-                width: 80px;
-                height: 80px;
-            }
-            h4 {
-                font-size: 18px;
-                line-height: 1.1;
-                margin: 0;
-                padding-left: 100px;
-            }
-            p {
-                font-size: 14px;
-                line-height: 1.3;
-                padding-left: 100px;
-                &.published {
-                    color: var(--color-text-secondary);
-                }
-            }
-        }
-        .isRight {
-            float: right;
-            width: 47%;
-            box-sizing: border-box;
-            @include respond-to(900) {
-                width: 100%;
-            }
-
-            .site-footer {
-                margin: 0;
-                padding: 0;
-                text-align: left;
-                font-size: 14px;
-                line-height: 2;
-                .social-icon {
-                    display: block;
-                }
-            }
-        }
     }
 }
 
@@ -463,6 +414,8 @@ pre.highlight {
 }
 
 .pagination {
+    color: var(--color-text-secondary);
+
     .disabled {
         opacity: 0;
     }
