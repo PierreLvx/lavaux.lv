@@ -66,7 +66,9 @@ a {
 }
 
 .site-header {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     width: 100%;
     max-width: 800px;
     margin: $rs * 2 auto;
@@ -77,13 +79,7 @@ a {
     }
 
     .page-links {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 0;
         font-size: 18px;
-        line-height: $rs * 2;
-
         a {
             color: var(--grey);
             &:hover {
@@ -109,11 +105,11 @@ a {
 
     .post-item {
         border-bottom: 1px solid var(--grey-lighter);
-        padding: 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        line-height: 3;
+        padding-top: $rs / 2;
+        padding-bottom: $rs / 2;
 
         &:last-of-type {
             border-bottom: 1px solid transparent;
@@ -434,9 +430,8 @@ a.logo {
     transition: opacity .2s linear;
     font-size: 2em;
     font-weight: 600;
-    margin-block-start: .67em;
-    margin-block-end: .67em;
-    display: block;
+    margin-block-end: $rs;
+
     &:hover {
         opacity: .75;
     }
