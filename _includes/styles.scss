@@ -7,7 +7,7 @@ $rs: 16px;
     --color-background: #fff;
     --color-text-default: #2a2e2e;
     --color-text-secondary: #666d7a;
-    --grey-lighter: rgba(221, 221, 221, .7);
+    --grey-lighter: #e7e9ee;
     --grey: #666d7a;
 }
 
@@ -36,10 +36,6 @@ amp-img[role=button] {
 
 %vertical-rhythm {
     margin-bottom: $rs;
-}
-
-main {
-    display: block;
 }
 
 body {
@@ -71,7 +67,7 @@ a {
     align-items: baseline;
     width: 100%;
     max-width: 800px;
-    margin: $rs * 2 auto;
+    margin: $rs * 2 auto $rs * 3 auto;
     border-bottom: 2px solid var(--grey-lighter);
     box-sizing: border-box;
     @include respond-to(900) {
@@ -82,6 +78,7 @@ a {
         font-size: 18px;
         a {
             color: var(--grey);
+            margin-left: 1rem;
             &:hover {
                 opacity: .75;
             }
@@ -118,14 +115,23 @@ a {
             font-size: 1rem;
             margin: 0;
             flex-grow: 1; // Safari Bugfix
+            a {
+                color: var(--color-text-default);
+                &:hover {
+                    opacity: .75;
+                }
+            }
         }
+
         .post-meta {
             margin-left: 1rem;
+            color: var(--color-text-secondary);
+            line-height: $rs * 2;
+            white-space: nowrap;
         }
     }
 
     article {
-        padding-top: $rs * 2;
         padding-bottom: $rs * 2;
         &:last-child {
             border-bottom: 0;
@@ -134,12 +140,6 @@ a {
             letter-spacing: $font-spacing;
             font-size: $font-size-large;
             margin: 0 0 32px 0;
-            a {
-                color: var(--color-text-default);
-                &:hover {
-                    opacity: .75;
-                }
-            }
         }
         .post-excerpt {
             letter-spacing: $font-spacing;
@@ -147,27 +147,7 @@ a {
             line-height: $line-height;
             color: var(--color-text-secondary);
         }
-        .post-meta {
-            color: var(--color-text-secondary);
-            line-height: $rs * 2;
-            white-space: nowrap;
-        }
     }
-}
-
-.post-template .content {
-    max-width: 800px;
-}
-
-.index-headline {
-    border-top: 1px solid var(--grey-lighter);
-    margin: 0;
-    padding: $rs 0;
-    padding-bottom: $rs * 2;
-    color: var(--grey);
-    font-size: $rs / 8 * 6;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .pagination {
@@ -343,27 +323,8 @@ a {
     }
 }
 
-.content {
-    .author-image {
-        background-image: url('{{ site.baseurl }}{{site.author_image}}');
-        float: left;
-        background-size: cover;
-        border-radius: 100%;
-    }
-}
-
 .username {
     margin-left: 8px;
-}
-
-.share {
-    padding: 20px 0 0;
-    a {
-        color: var(--color-text-secondary);
-        &:hover {
-            color: var(--color-text-default);
-        }
-    }
 }
 
 pre,
@@ -437,10 +398,7 @@ a.logo {
     }
 }
 
-span.published {
-    color: var(--color-text-secondary);
-}
-
+span.published,
 .reading-time {
     color: var(--color-text-secondary);
 }

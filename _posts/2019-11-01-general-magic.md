@@ -3,6 +3,7 @@ layout: post
 title: General Magic - A Must-See Documentary
 comments: true
 vimeo: true
+tags: opinion
 ---
 
 General Magic is "the most important company to come out of Silicon Valley that no one’s ever heard of" and a gripping retelling of the inception of smartphones.

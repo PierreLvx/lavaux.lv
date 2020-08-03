@@ -3,6 +3,7 @@ layout: post
 title: Why AdBlock revenue losses estimates are complete bullshit
 comments: true
 images: true
+tags: opinion
 ---
 
 **No one seems to agree on the actual losses due to adblocking.** Instead of informing a critical debate about the future of web advertising, and more broadly, online monetization, I would argue that recent estimates mostly serve the agendas of companies selling adblock mitigation services.

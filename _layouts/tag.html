@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<main class="content" role="main">
+    <h1>Tag #{{page.tag}}</h1>
+      {% for post in site.posts %}
+      {% if post.tags contains page.tag %}
+      <article class="post-item" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+        <time datetime="{{ post.date | date_to_long_string }}" class="post-meta">{{ post.date | date_to_long_string }}</time>
+      </article>
+      {% endif %}
+      {% endfor %}
+</main>
