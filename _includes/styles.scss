@@ -8,7 +8,6 @@ $rs: 16px;
     --color-text-default: #2a2e2e;
     --color-text-secondary: #666d7a;
     --grey-lighter: #e7e9ee;
-    --grey: #666d7a;
 }
 
 .icon {
@@ -21,7 +20,7 @@ $rs: 16px;
 }
 
 amp-img {
-    background-color: var(--grey);
+    background-color: var(--color-text-secondary);
 }
 
 amp-img[role=button] {
@@ -39,7 +38,7 @@ amp-img[role=button] {
 }
 
 body {
-    background-color: --color-background;
+    background-color: var(--color-background);
     font-family: $font-sans;
     margin: 0;
     padding: 0;
@@ -53,7 +52,7 @@ body {
 
 
 a {
-    color: var(--grey);
+    color: var(--color-text-secondary);
     text-decoration: none;
     transition: 0.2s linear;
     &:hover {
@@ -61,7 +60,7 @@ a {
     }
 }
 
-.site-header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -77,10 +76,13 @@ a {
     .page-links {
         font-size: 18px;
         a {
-            color: var(--grey);
+            color: var(--color-text-secondary);
             margin-left: 1rem;
             &:hover {
                 opacity: .75;
+            }
+            &:first-of-type {
+                margin-left: 0;
             }
         }
     }
@@ -155,7 +157,7 @@ a {
     padding: $rs * 2 0 0;
 }
 
-.site-footer {
+footer {
     margin: 0 auto;
     padding: $rs * 3 0;
     width: 100%;
@@ -183,12 +185,9 @@ a {
     }
 
     .post-content {
-        width: 100%;
         margin-top: $rs * 2;
         h1, h2, h3, h4, h5, h6 {
-            font-family: $font-sans;
             letter-spacing: $font-spacing;
-            font-style: normal;
             margin-bottom: 0;
         }
         h2, h3, h4, h5, h6 {
@@ -211,8 +210,6 @@ a {
         }
         p {
             line-height: $line-height;
-            margin-top: $rs;
-            margin-bottom: $rs;
             text-align: justify;
         }
         a {
