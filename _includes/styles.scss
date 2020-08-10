@@ -64,7 +64,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 100%;
     max-width: 800px;
     margin: $rs * 2 auto $rs * 3 auto;
     border-bottom: 2px solid var(--grey-lighter);
@@ -76,7 +75,6 @@ header {
     .page-links {
         font-size: 18px;
         a {
-            color: var(--color-text-secondary);
             margin-left: 1rem;
             &:hover {
                 opacity: .75;
@@ -90,7 +88,6 @@ header {
 }
 
 .content {
-    width: 100%;
     max-width: 800px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -152,15 +149,9 @@ header {
     }
 }
 
-.pagination {
-    text-align: center;
-    padding: $rs * 2 0 0;
-}
-
 footer {
     margin: 0 auto;
     padding: $rs * 3 0;
-    width: 100%;
     max-width: 800px;
     font-size: $rs / 4 * 3;
     text-align: center;
@@ -369,17 +360,12 @@ pre.highlight {
 
 .pagination {
     color: var(--color-text-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: $rs * 2 0 0;
 
     .disabled {
         opacity: 0;
-    }
-
-    a.newer-posts {
-        float: left;
-    }
-
-    a.older-posts {
-        float: right;
     }
 }
 
