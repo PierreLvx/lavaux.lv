@@ -293,7 +293,6 @@ code {
     color: var(--color-text-default);
     font-feature-settings: initial;
     font-family: $font-mono;
-    font-weight: 400;
 }
 
 code {
@@ -317,7 +316,6 @@ pre.highlight {
     margin-left: -$rs;
     margin-right: -$rs;
     border-radius: 0;
-    line-height: 1.35;
     text-align: initial;
 }
 
