@@ -57,14 +57,20 @@ a {
     }
 }
 
+.content,
+header,
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    max-width: 800px;
     margin: $rs * 2 auto $rs * 3 auto;
     border-bottom: 2px solid var(--grey-lighter);
-    box-sizing: border-box;
     @include respond-to(900) {
         padding: 0 $rs * 1;
     }
@@ -84,9 +90,6 @@ header {
 }
 
 .content {
-    max-width: 800px;
-    margin: 0 auto;
-    box-sizing: border-box;
     @include respond-to(900) {
         padding: 0 $rs * 1;
     }
@@ -140,9 +143,7 @@ header {
 }
 
 footer {
-    margin: 0 auto;
     padding: $rs * 3 0;
-    max-width: 800px;
     font-size: $rs / 4 * 3;
     text-align: center;
     color: var(--color-text-secondary);
@@ -221,15 +222,6 @@ footer {
             outline: 0;
             z-index: 300;
             text-align: center;
-        }
-        hr {
-            border: 0;
-            padding: 0;
-            display: block;
-            width: 15%;
-            margin: $rs * 2 auto;
-            border: 0px solid var(--grey-lighter);
-            border-top: 1px solid var(--grey-lighter);
         }
         blockquote {
             margin-top: $rs * 2;
