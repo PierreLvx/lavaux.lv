@@ -3,6 +3,7 @@ layout: post
 title: Migrating this site from GitHub Pages to Netlify
 description: Why I have migrated my blog from GitHub pages to Netlify and some of the immediate benefits.
 comments: true
+tags: tips
 ---
 
 I started this blog three years ago and hosted it on GitHub pages. Push to deploy was enabled via Travis CI, initially with a little [hackish shell script](https://github.com/PierreLvx/lavaux.lv/commit/4851726eeed61c0c57072a3170122d4e7488f68a). Before HTTPS with custom domains was supported by GitHub, this blog leveraged Cloudflare's free Flexible SSL option.
